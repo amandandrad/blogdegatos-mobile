@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+  --cor-header: hsl(195, 91%, 25%);
+  --cor-footer: hsl(195, 46%, 40%);
+  --cor-titulo-principal: hsl(240, 6%, 13%);
+  --cor-paragrafos: hsl(240, 5%, 7%);
+  --cor-input: hsl(0, 0%, 100%);
+}
+
+body {
+  max-width: 43rem;
+  margin: 0 auto;
+}
+
+header {
+  z-index: 1;
+  background-color: var(--cor-header);
+  max-width: 43rem;
+  height: 7.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin: 1.6rem 2.8rem;
+  border-radius: 2rem;
+}
+
+.avatar {
+  margin: 1.6rem 2.8rem 1.6rem 2.5rem;
+  border-radius: 2rem;
+}
+
+input {
+  height: 4rem;
+  max-width: 25rem;
+  background-color: #387e96;
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 1.6rem;
+  color: var(--cor-input);
+  padding-left: 1.2rem;
+  font-weight: 600;
+}
+
+main .cat {
+  max-width: 100%;
+}
+
+main h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1.3rem;
+  color: var(--cor-titulo-principal);
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+main p,
+fieldset p {
+  font-weight: 400;
+  color: var(--cor-paragrafos);
+}
+
+main p {
+  font-size: 1.6rem;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+button {
+  height: 4rem;
+  width: 4rem;
+  border: none;
+  gap: 1.2rem;
+}
+
+.like {
+  background-image: url(./assets/like.jpg);
+}
+
+.deslike {
+  background-image: url(./assets/deslike.jpg);
+}
+
+.texts {
+  padding: 3rem 2.6rem 3.4rem 2.2rem;
+}
+
+aside h1 {
+  padding: 0 2.6rem 2.4rem 2.2rem;
+  font-size: 2.4rem;
+}
+
+aside h2 {
+  padding-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.text-02 {
+  padding-left: 1.6rem;
+}
+
+.text-02 p {
+  font-size: 1.4rem;
+}
+
+.content-group {
+  padding: 0 2.6rem 3.2rem 2.2rem;
+  border: none;
+  display: flex;
+  max-width: 38.2rem;
+  min-height: 8.4rem;
+  box-sizing: content-box;
+  align-items: center;
+}
+
+.content-group img {
+  width: 15.1rem;
+  height: 8.4rem;
+  border-radius: 0.5rem;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+
+  transition: all 200ms ease-out;
+}
+
+.content-group img {
+  animation: appear 0.4s;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+}
+
+.content-group img:hover {
+  filter: saturate(170%);
+  transform: scale(1.1);
+}
+
+footer {
+  min-width: 43rem;
+  height: 6.4rem;
+  background-color: var(--cor-footer);
+  font-size: 1.6rem;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  font-weight: 600;
+}
